@@ -1,3 +1,4 @@
+<script>
 var msg = JSON.stringify({
 	type: 'redirection',
 	message: {
@@ -6,3 +7,4 @@ var msg = JSON.stringify({
 })
 
 setTimeout(() => { window.top.postMessage(msg, '*'); }, 2000) 
+</script>
